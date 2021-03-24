@@ -2,16 +2,32 @@
     "name": "employee-crud-api",
     "version": "1.0.0",
     "description": "Aplicação CRUD API em Node.js que alimentará os 4 principais frameworks do mercado...",
-    "main": "index.js",
+    "main": "server.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "dev": "nodemon",
+        "lint": "eslint --ext .js, .html -f ./node_module/eslint-friendly-formatter . --fix",
+        "prepush": "npm run lint",
+        "start": "node server.js"
     },
     "repository": {
         "type": "git",
         "url": "https://github.com/ScodeArruda/employee-crud-api.git"
     },
-    "keywords": [],
-    "author": "",
+    "keywords": [
+        "nodejs",
+        "api",
+        "crud",
+        "azure-functions",
+        "express",
+        "github-actions",
+        "swa",
+        "serverless",
+        "azure",
+        "postgresql",
+        "sql",
+        "javascript"
+    ],
+    "author": "Sergio Arruda <github.com/ScodeArruda - GitHub>",
     "license": "MIT",
     "bugs": {
         "url": "https://github.com/ScodeArruda/employee-crud-api/issues"
@@ -21,5 +37,8 @@
         "eslint": "^7.22.0",
         "husky": "^5.2.0",
         "nodemon": "^2.0.7"
+    },
+    "dependencies": {
+        "eslint-friendly-formatter": "^4.0.1"
     }
 }
